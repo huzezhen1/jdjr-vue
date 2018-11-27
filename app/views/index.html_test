@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html a {
+      color: blue;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app"></div>
+  <a class="hash" data-url="#a.html">页面A</a>
+  <a class="hash" data-url="#b.html">页面B</a>
+
+  <script>
+    // hashchange事件、location.hash
+    document.querySelectorAll('.hash').forEach(item => {
+      item.addEventListener('click', e => {
+        e.preventDefault();
+        let data = item.dataset.url;
+        location.hash = data;
+      }, false)
+    })
+    window.addEventListener('hashchange', e => {
+      console.log({
+        location: location.href,
+        hash: location.hash
+      })
+    },false)
+  </script>
+
+  <a class="api" data-url="c.html">页面C</a>
+  <a class="api" data-url="d.html">页面D</a>
+
+  <script>
+    document.querySelectorAll('.api').forEach(item => {
+      item.addEventListener('click', e => {
+        e.preventDefault();
+        let data = item.dataset.url;
+        window.history.pushState({'name': 'huzezhen'}, data, data);
+      }, false)
+    })
+    window.addEventListener('popstate', e => {
+      console.log({
+        location: location.href,
+        state: e.state  // 传来的参数，这里是 { 'name': 'huzezhen'}
+      })
+    }, false)
+  </script>
+</body>
+
+</html>
