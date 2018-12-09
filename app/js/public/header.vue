@@ -1,7 +1,5 @@
 <template>
-  <div :class="$style.header">
-    
-  </div>
+  <div :class="$style.header" />
 </template>
 
 <script>

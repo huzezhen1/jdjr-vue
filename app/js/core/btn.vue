@@ -1,28 +1,28 @@
 <template>
   <div :class="[btnClass, cname]">
-
+    <span>123</span>
   </div>
 </template>
 
 <script>
 export default {
-    props: {
-      cname: {
-        type: String,
-        default: ''
-      }
+  props: {
+    cname: {
+      type: String,
+      default: '',
     },
-    data() {
-      return {
-        btnClass: 'btn'
-      }
+  },
+  data() {
+    return {
+      btnClass: 'btn',
     }
+  },
 }
 </script>
 
 <style lang='scss'>
-  @import '../../css/element.scss';
-  .btn {
-    @include btn;
-  }
+@import "../../css/element.scss";
+.btn {
+  @include btn;
+}
 </style>

@@ -1,8 +1,8 @@
 <template>
   <div class="[panelClass, cname]">
-    <h4>{{title}}</h4>
-    <slot/>
-  </div>  
+    <h4>{{ title }}</h4>
+    <slot />
+  </div>
 </template>
 
 <script>
@@ -10,18 +10,18 @@ export default {
   props: {
     cname: {
       type: String,
-      default: ''
+      default: '',
     },
     title: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
   data() {
     return {
-      panelClass: 'panel'
+      panelClass: 'panel',
     }
-  }
+  },
 }
 </script>
 

@@ -1,22 +1,22 @@
 <template>
   <section :class="cname">
-    <swiper :options="options" :not-next-tick="options.notNextTick">
-      <swiper-slide v-for="item in items" :key="item.href">
-        <router-link :to="{name: item.href}">
+    <Swiper :options="options" :not-next-tick="options.notNextTick">
+      <SwiperSlide v-for="item in items" :key="item.href">
+        <RouterLink :to="{name: item.href}">
           <img :src="item.src" alt="">
-        </router-link>
-      </swiper-slide>
-      <div class="swiper-pagination"  slot="pagination" v-if="options.pagination"></div>
-    </swiper>
+        </RouterLink>
+      </SwiperSlide>
+      <div v-if="options.pagination" slot="pagination" class="swiper-pagination" />
+    </Swiper>
   </section>
 </template>
 
 <script>
-import {swiper, swiperSlide} from 'vue-awesome-swiper'
+import { swiper, swiperSlide } from 'vue-awesome-swiper'
 export default {
   components: {
     swiper,
-    swiperSlide
+    swiperSlide,
   },
   props: {
     options: {
@@ -26,19 +26,19 @@ export default {
           autoplay: true,
           loop: true,
           pagination: {
-            el: 'swiper-pagination'
+            el: 'swiper-pagination',
           },
-          notNextTick: false
+          notNextTick: false,
         }
       },
       items: {
         type: Array,
         default() {
           return []
-        }
-      }
-    }
-  }
+        },
+      },
+    },
+  },
 }
 </script>
 
