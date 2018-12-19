@@ -38,14 +38,14 @@
       }
     }
 
-    doc.docElement.setAttribute('data-dpr', dpr)
+    doc.documentElement.setAttribute('data-dpr', dpr)
     hotcss.dpr = dpr
 
-    doc.docElement.setAttribute('max-width', maxWidth)
+    doc.documentElement.setAttribute('max-width', maxWidth)
     hotcss.maxWidth = maxWidth
 
     if (designWidth) {
-      doc.docElement.setAttribute('design-width', designWidth)
+      doc.documentElement.setAttribute('design-width', designWidth)
     }
     hotcss.designWidth = designWidth // 保证px2rem 和 rem2px 不传第二个参数时, 获取hotcss.designWidth是undefined导致的NaN
 
@@ -87,7 +87,7 @@
 
   hotcss.mresize = function() {
     // 对，这个就是核心方法了，给HTML设置font-size。
-    let innerWidth = doc.docElement.getBoundingClientRect().width || win.innerWidth
+    let innerWidth = doc.documentElement.getBoundingClientRect().width || win.innerWidth
 
     if (hotcss.maxWidth && (innerWidth / hotcss.dpr > hotcss.maxWidth)) {
       innerWidth = hotcss.maxWidth * hotcss.dpr
@@ -97,7 +97,7 @@
       return
     }
 
-    doc.docElement.style.fontSize = `${innerWidth * 20 / 320}px`
+    doc.documentElement.style.fontSize = `${innerWidth * 20 / 320}px`
     hotcss.callback && hotcss.callback()
   }
   hotcss.mresize()

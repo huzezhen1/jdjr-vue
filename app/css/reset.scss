@@ -18,7 +18,9 @@ center, u, b, i {
     vertical-align: baseline
 }
 body {
-    line-height: 1
+    background-color: #f5f5f5;
+    line-height: 1;
+    font-family: PingFangSC-Regular,Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 :focus {
     outline: 0
@@ -47,4 +49,25 @@ hr {
     color: #000;
     background-color: #000;
     height: 1px
+}
+a {
+  text-decoration: none;
+}
+/*轮播图指示点的自定义样式 - 暂时放这了*/
+.swiper-pagination-bullets {
+  width: 100%;
+  position: absolute;
+  bottom: 20px!important;
+  line-height: 0;
+  .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    background: url('//m.jr.jd.com/spe/qyy/main/images/banner_point.png') center center;
+    background-size: 14px 14px;
+    margin: 0 5px;
+  }
+  .swiper-pagination-bullet-active {
+    background: url('//m.jr.jd.com/spe/qyy/main/images/banner_point_cur.png') center center;
+    background-size: 14px 14px;
+  }
 }

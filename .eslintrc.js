@@ -40,6 +40,7 @@ module.exports = {
       {
         avoidEscape: true // 允许字符串使用单引号或双引号
       }
-    ]
+    ],
+    "vue/component-name-in-template-casing": 0  // 关闭对组件名称写法限制，比如<MyComponent>或者<my-component>都可以
   }
 }

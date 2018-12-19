@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <RouterView />
+    <router-view />
   </div>
 </template>
 
@@ -9,3 +9,7 @@ export default {
   name: 'App',
 }
 </script>
+
+<style lang='scss'>
+@import "../css/reset.scss";
+</style>
