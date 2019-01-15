@@ -21,7 +21,9 @@ body {
     background-color: #f5f5f5;
     line-height: 1;
     font-family: PingFangSC-Regular,Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
+    font-weight: 400;
+    color: #333;
+  }
 :focus {
     outline: 0
 }
@@ -52,6 +54,7 @@ hr {
 }
 a {
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 /*轮播图指示点的自定义样式 - 暂时放这了*/
 .swiper-pagination-bullets {

@@ -58,7 +58,7 @@ export default {
 @import '../../css/element.scss';
 .panel {
   .content {
-    @include flex(row);
+    @include list(row);
     .item {
       position: relative;
       box-sizing: border-box;

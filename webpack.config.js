@@ -56,6 +56,16 @@ module.exports = env => {
             }
           }
         }, {
+          test: /\.(png|jpg|gif)$/i,
+          use: [
+            {
+              loader: 'url-loader',
+              options: {
+                limit: 8192
+              }
+            }
+          ]
+        }, {
           test: /\.scss$/,
           loader: 'style-loader!css-loader!sass-loader'
         }

@@ -24,8 +24,28 @@
 
 ## 记录
 
+### 操作分支
+
+##### 方式一
 在 github 上创建分支 home
 在本地 git pull
 然后在本地 git checkout home，就会切换到 home 分支下
 开发完 home 功能后，git add . 然后 git commit -m 'xxx' ，然后 git push，就会本地 home 分支的内容 push 到 github 上的 home 分支，
 然后 git checkout master 切换到 主分支，git merge orign/home 合并 home 分支上的内容到主分支，再 git push 一下把 master 的内容也提交到线上仓库的 master 主分支上
+
+##### 方式二
+在本地创建分支 earn，即 git branch earn，然后切换到 earn 分支，即 git checkout earn 
+然后git push origin earn，推到远程仓库，即远程上也创建了 earn 分支
+然后关联本地分支与远程分支，git branch -u origin/earn 或者 git branch --set-upstream-to origin/earn
+
+### swiper组件相关
+
+##### swiper组件禁止手动滑动
+在最外层加上类名 swiper-no-swiping
+
+##### 解决手动滑动之后，自动轮播失效
+```
+autoplay: {
+  disableOnInteraction: false
+}
+```

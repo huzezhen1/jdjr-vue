@@ -32,31 +32,31 @@ export default {
     return {
       items: [{
         src: '//img12.360buyimg.com/jrpmobile/jfs/t1/8325/8/4331/3095/5bda5c89E1be47c14/47b6a296683a12a5.png?width=90&height=90',
-        href: 'home',
+        href: 'Home',
         title: '首页',
         unread: false,
         index: 1,
       }, {
         src: '//img12.360buyimg.com/jrpmobile/jfs/t1/1890/15/14183/1269/5bda5c97E34734b01/241a0f5b17fd3e51.png?width=60&height=60',
-        href: 'home',
+        href: 'Earn',
         title: '赚钱',
         unread: false,
         index: 2,
       }, {
         src: '//img12.360buyimg.com/jrpmobile/jfs/t1/5291/40/14133/594/5bda5ca3E92d0e800/09ac81fa5a5c96ef.png?width=60&height=60',
-        href: 'home',
+        href: 'Home',
         title: '借钱',
         unread: true,
         index: 3,
       }, {
         src: '//img12.360buyimg.com/jrpmobile/jfs/t1/3358/38/14064/816/5bda5cabEcb7eca8b/9bb064f1cda7ceba.png?width=60&height=60',
-        href: 'home',
+        href: 'Home',
         title: '省钱',
         unread: false,
         index: 4,
       }, {
         src: '//img12.360buyimg.com/jrpmobile/jfs/t1/7491/15/4277/926/5bda5cb9E421a0e60/89ee14ce9daf4aab.png?width=60&height=60',
-        href: 'home',
+        href: 'Home',
         title: '金融会员',
         unread: false,
         index: 5,
@@ -79,7 +79,7 @@ export default {
       display: none;
     }
     .content {
-      @include flex(row);
+      @include list(row);
       justify-content: space-around;
       height: 100px;/*px*/
       li {
