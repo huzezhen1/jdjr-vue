@@ -49,3 +49,15 @@ autoplay: {
   disableOnInteraction: false
 }
 ```
+
+##### 属性observer和observeParents
+observer启动动态检查器,当改变swiper的样式（例如隐藏/显示）或者修改swiper的子元素时，自动初始化swiper。
+
+将observe应用于Swiper的父元素。当Swiper的父元素变化时，例如window.resize，Swiper更新。
+
+### css问题
+
+##### flex布局使得图片纵向拉伸
+解决方案：
+1.在父元素没有设置高度的情况下，可以设置图片height:100%，可以解决这个问题。 
+2.用div标签包裹图片，这种方案比较通用，但是会产生无用标签。

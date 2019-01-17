@@ -44,7 +44,7 @@ export default {
         index: 2,
       }, {
         src: '//img12.360buyimg.com/jrpmobile/jfs/t1/5291/40/14133/594/5bda5ca3E92d0e800/09ac81fa5a5c96ef.png?width=60&height=60',
-        href: 'Home',
+        href: 'Borrow',
         title: '借钱',
         unread: true,
         index: 3,
@@ -75,6 +75,7 @@ export default {
     width: 100%;
     margin-bottom: 0;
     z-index: 999;
+    box-shadow: 0 -6px 8px rgba(0,0,0,.03);
     >h4 {
       display: none;
     }
