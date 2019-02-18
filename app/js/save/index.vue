@@ -2,20 +2,30 @@
   <div>
     <Heador title="省钱" />
     <SSlider />
-    <!-- <NavB :current="curId" /> -->
+    <Pay />
+    <Life />
+    <Banner />
+    <NavB :current="curId" />
   </div>
 </template>
 
 <script>
 import Heador from '../public/header.vue'
+import NavB from '../public/navbar.vue'
 import SSlider from './sslider.vue'
-// import NavB from '../public/navbar.vue'
+import Pay from './pay.vue'
+import Life from './life.vue'
+import Banner from './banner.vue'
+
 
 export default {
   components: {
     Heador,
     SSlider,
-    // NavB,
+    Pay,
+    Life,
+    Banner,
+    NavB,
   },
   data() {
     return {
