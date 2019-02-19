@@ -4,6 +4,7 @@ import Home from '../home/index.vue'
 import Earn from '../earn/index.vue'
 import Borrow from '../borrow/index.vue'
 import Save from '../save/index.vue'
+import Vip from '../vip/index.vue'
 
 Vue.use(Router)
 
@@ -25,6 +26,10 @@ export default new Router({
       path: '/save',
       name: 'Save',
       component: Save,
+    }, {
+      path: '/vip',
+      name: 'Vip',
+      component: Vip,
     },
   ],
 })

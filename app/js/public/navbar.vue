@@ -56,7 +56,7 @@ export default {
         index: 4,
       }, {
         src: '//img12.360buyimg.com/jrpmobile/jfs/t1/7491/15/4277/926/5bda5cb9E421a0e60/89ee14ce9daf4aab.png?width=60&height=60',
-        href: 'Home',
+        href: 'Vip',
         title: '金融会员',
         unread: false,
         index: 5,
