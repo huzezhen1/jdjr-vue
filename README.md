@@ -1,5 +1,7 @@
 # JDJR-VUE
 
+练手项目，仿<京东金融>H5页面
+
 ## 记录
 
 Q: ESLint报错：`Error while loading rule 'eslint-comments/no-unused-disable': Cannot read property 'report' of undefined`
