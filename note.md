@@ -6,13 +6,6 @@
 - [前端跳槽面试那些事儿](https://www.imooc.com/article/20010)
 - [前端工程师是时候学习ES6了](https://www.imooc.com/article/17720)
 
-## 课程推荐
-
-- [ES6 零基础教学 解析彩票项目](https://coding.imooc.com/class/98.html)
-- [前端跳槽面试必备技巧](https://coding.imooc.com/class/129.html)
-- [前端成长必经之路：组件化思维与技巧](https://coding.imooc.com/class/175.html)
-- [Web安全](https://www.imooc.com/learn/812)
-
 ## 博客推荐
 
 - [深入学习CSS属性中的百分比](https://segmentfault.com/a/1190000010425830)
@@ -22,9 +15,9 @@
 - [聊聊Ajax那些事儿](https://segmentfault.com/a/1190000006669043)
 - [Document.write知多少](https://segmentfault.com/a/1190000006197157)
 
-## 记录
+# 记录
 
-### 操作分支
+## 操作分支
 
 ##### 方式一
 在 github 上创建分支 home
@@ -38,7 +31,7 @@
 然后git push origin earn，推到远程仓库，即远程上也创建了 earn 分支
 然后关联本地分支与远程分支，git branch -u origin/earn 或者 git branch --set-upstream-to origin/earn
 
-### swiper组件相关
+## swiper组件相关
 
 ##### swiper组件禁止手动滑动
 在最外层加上类名 swiper-no-swiping
@@ -55,7 +48,7 @@ observer启动动态检查器,当改变swiper的样式（例如隐藏/显示）�
 
 将observe应用于Swiper的父元素。当Swiper的父元素变化时，例如window.resize，Swiper更新。
 
-### css问题
+## css问题
 
 ##### flex布局使得图片纵向拉伸
 解决方案：

@@ -18,6 +18,4 @@ https://www.npmjs.com/package/vue-awesome-swiper
 
 https://www.swiper.com.cn/demo/index.html
 
-https://gitee.com/zlif/vuecom/blob/index/app/views/index.html
-
 https://cn.vuejs.org/v2/api/#methods
